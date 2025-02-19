@@ -7,6 +7,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+//Route::get('/test', function () {
+//    return view('admin.post.form');
+//});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -15,7 +20,7 @@ Route::get('/dashboard', function () {
 
 
 Route::get('/posts', \App\Http\Controllers\Admin\Post\IndexController::class)->middleware(['auth', 'verified'])->name('posts');
-Route::get('/{post}', \App\Http\Controllers\Admin\Post\ShowController::class)->middleware(['auth', 'verified'])->name('show');
+Route::get('/{post}',\App\Http\Controllers\Admin\Post\ShowController::class)->middleware(['auth', 'verified'])->name('show');
 
 
 

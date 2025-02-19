@@ -9,14 +9,11 @@
 
         <div class="sm:flex sm:items-center">
             <div class="sm:flex-auto">
-                <a href="{{url()->previous()}}">
-                    Go back to the previous page
-                </a>
                 <h1 class="text-base font-semibold leading-6 text-gray-600">Post show</h1>
                 <p class="mt-2 text-xs text-gray-400">A list of all the users in your account including their name, title, email and role.</p>
             </div>
             <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
-                <button type="button" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Supprimer</button>
+                <button type="button" class="block rounded-md bg-red-800 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Supprimer</button>
             </div>
         </div>
         <div class="-mx-4 mt-8 sm:-mx-0 text-xs">
