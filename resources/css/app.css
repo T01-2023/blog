@@ -6,8 +6,7 @@
 @source '../views';
 
 @theme {
-    --font-sans: Figtree, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: InterVariable, sans-serif;
     --color-primary: oklch(0.84 0.18 117.33);
 }
 
