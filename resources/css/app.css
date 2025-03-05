@@ -7,7 +7,7 @@
 
 @theme {
     --font-sans: InterVariable, sans-serif;
-    --color-primary: oklch(0.84 0.18 117.33);
+    --color-vert: #7e9086;
 }
 
 /*
@@ -26,4 +26,23 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-vert);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }

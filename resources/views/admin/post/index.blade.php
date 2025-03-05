@@ -5,6 +5,19 @@
         </h2>
     </x-slot>
 
+
+
+    @if (session('status') === 'true')
+        <p
+            x-data="{ show: true }"
+            x-show="show"
+            x-transition
+            x-init="setTimeout(() => show = false, 2000)"
+            class="text-sm text-gray-600"
+        >{{ 'Post ajouté nickel !!' }}</p>
+    @endif
+
+
     <div class="overflow-hidden shadow-md p-8">
 
         <div class="sm:flex sm:items-center">
@@ -14,7 +27,7 @@
             </div>
             <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
                 <button type="button" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">
-                    <a href="#">New post</a>
+                    <a href="{{ route('form') }}">New post</a>
                 </button>
             </div>
         </div>

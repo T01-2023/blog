@@ -26,9 +26,25 @@
                 </header>
             @endisset
 
+
+
+            <div class="border border-amber-400  h-20 max-w-7xl mx-auto p-4">
+                @if (session('status'))
+                <div class="bg-green-100" x-data="{ show: true }"
+                     x-show="show"
+                     x-transition
+                     x-init="setTimeout(() => show = false, 5000)"
+                     class="text-sm text-gray-600"
+                >{{ session('status')}}
+                </div>
+                @endif
+
+                    @dump(session('status'))
+            </div>
+
             <!-- Page Content -->
             <main>
-                <div class="py-12">
+                <div>
                     <div class="max-w-7xl mx-auto p-4 border-0 border-green-800 text-sm text-gray-400">
                         {{ $slot }}
                     </div>

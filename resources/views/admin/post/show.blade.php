@@ -18,7 +18,7 @@
         </div>
         <div class="-mx-4 mt-8 sm:-mx-0 text-xs">
 
-            {{ $post->id }} - {{ $post->title }}
+            {{ $post->id }} - {{ $post->title }} - {{ $post->slug }}
             <br>
             <br>
             Créé le : {{ $post->created_at->format('d-m-Y à h:i') }}
