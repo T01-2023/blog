@@ -12,6 +12,7 @@ class StoreController extends Controller
 {
     /**
      * Handle the incoming request.
+     * 
      */
     public function __invoke(PostFormRequest $request, Post $post)
     {
@@ -19,10 +20,10 @@ class StoreController extends Controller
 
         $validated['excerpt'] = Str::limit($validated['content'], 150);
 
-        $post = POST::create($validated);
-
-        return to_route('posts')->with('status', 'post c est super bien créé');
+        $post = Post::create($validated);
 
 
+        return to_route('posts')->with('status', 'post c est super '.$post->title.' bien créé');
     }
 }
+

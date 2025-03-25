@@ -14,6 +14,7 @@ class Post extends Model
         'slug',
         'content',
         'excerpt',
+        'status',
     ];
 
     public function getRouteKeyName(): string

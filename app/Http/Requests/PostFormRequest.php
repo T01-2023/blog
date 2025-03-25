@@ -33,6 +33,7 @@ class PostFormRequest extends FormRequest
             'title' => ['required', 'string', 'between:3,255'],
             'slug' => ['string', 'between:3,255', 'unique:posts'],
             'content' => ['required', 'string', 'between:3,255'],
+            'status' => ['required', 'string'],
         ];
     }
 }

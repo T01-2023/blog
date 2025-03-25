@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug')->unique();
+            $table->enum('status', ['draft', 'online', 'archived'])->default('online');
             $table->string('excerpt');
             $table->text('content');
             $table->string('thumbnail');

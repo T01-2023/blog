@@ -40,6 +40,8 @@
                 @endif
 
                     @dump(session('status'))
+
+
             </div>
 
             <!-- Page Content -->
@@ -51,6 +53,8 @@
                 </div>
 
             </main>
+
+            <x-dev.mediaqueries />
         </div>
     </body>
 </html>
